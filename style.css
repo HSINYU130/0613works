@@ -1,0 +1,523 @@
+@charset "UTF-8";
+* {
+  /*border: solid 1px black */
+}
+
+body {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  background-color: #830CAB;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: "微軟正黑體";
+}
+
+.mytalk {
+  border: solid 4px #EB77D7;
+  border-radius: 20px 20px;
+  padding: 15px;
+  width: 350px;
+  height: 150px;
+  font-family: "微軟正黑體";
+}
+
+.resume {
+  display: flex;
+  max-width: 950px;
+  border: solid 8px #EDCFEB;
+  padding: 15px;
+  position: relative;
+}
+
+.left {
+  flex: 5;
+}
+
+.right {
+  flex: 7;
+}
+
+.left, .right {
+  padding: 15px;
+}
+
+.left {
+  padding-right: 50px;
+}
+
+.right {
+  padding-left: 50px;
+  padding-top: 300px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+h1 {
+  color: #FFBB99;
+  font-size: 58px;
+}
+
+h4 {
+  font-size: 20px;
+  color: #F9E9D1;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 45px;
+  font-weight: bolder;
+  font-size: 30px;
+  color: #CBE4F5;
+  border: 20;
+}
+h2::before {
+  content: " ";
+  display: inline-block;
+  width: 25px;
+  height: 8px;
+  background-color: #E3C3F3;
+  margin-right: 20px;
+}
+h2::after {
+  content: " ";
+  display: inline-block;
+  width: 25px;
+  height: 8px;
+  background-color: #FF7168;
+  margin-left: 20px;
+}
+
+.value {
+  height: 100%;
+  width: 50%;
+  background-color: #830CAB;
+}
+
+.p10 {
+  width: 10%;
+}
+
+.p20 {
+  width: 20%;
+}
+
+.p30 {
+  width: 30%;
+}
+
+.p40 {
+  width: 40%;
+}
+
+.p50 {
+  width: 50%;
+}
+
+.p60 {
+  width: 60%;
+}
+
+.p70 {
+  width: 30%;
+}
+
+.p80 {
+  width: 80%;
+}
+
+.p90 {
+  width: 90%;
+}
+
+.p100 {
+  width: 100%;
+}
+
+.listProgram:hover .value {
+  background-color: #F8607D;
+  transition: 2s;
+}
+
+.decoration:hover {
+  opacity: 0.1;
+  transition: 1s;
+}
+
+.decoration {
+  top: 30px;
+  left: 600px;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to bottom left, #E28EF5, #FCD16D);
+  position: absolute;
+  top: 40px;
+  right: 100px;
+  border-radius: 20px 0px 30px 0px;
+}
+
+.photo::before {
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 200px;
+  background-image: url("https://ppt.cc/fo9VBx@.jpg");
+  background-position: center;
+  top: 40px;
+  left: 600px;
+  border-radius: 30px 0px;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 113, 104, 0.4);
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.p90, .p180, .p270, .p360 {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  left: 50%;
+  top: 0;
+  background-color: rgba(255, 113, 104, 0.1);
+}
+
+.p180 {
+  left: 50%;
+  top: 50%;
+}
+
+.p270 {
+  left: 0;
+  top: 50%;
+}
+
+.p360 {
+  left: 0;
+  top: 0;
+}
+
+.circle::after {
+  content: "";
+  display: block;
+  background-color: #02005b;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.personality:hover .p90, .personality:hover .p180, .personality:hover .p270, .personality:hover .p360 {
+  background-color: #ff7168;
+  transition: 2s;
+}
+
+.personality {
+  display: flex;
+  flex-wrap: wrap;
+}
+.personality li {
+  width: 25%;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #F9E9D1;
+  font-size: 15px;
+  font-family: "微軟正黑體";
+  font-weight: bold;
+}
+
+.listExperience > li {
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #F9E9D1;
+  font-family: "微軟正黑體";
+  font-weight: bolder;
+}
+.listExperience li ul {
+  padding-left: 10px;
+  margin-left: 10px;
+  border-left: solid 4px;
+}
+.listExperience li:nth-child(1) ul {
+  border-color: #ff7168;
+}
+.listExperience li:nth-child(2) ul {
+  border-color: #F57C9C;
+}
+.listExperience li:nth-child(3) ul {
+  border-color: #F5A882;
+}
+.listExperience > li:nth-child(4) ul {
+  border-color: #ffde9e;
+}
+
+.listProgram .bar {
+  width: 70%;
+  height: 10px;
+  border: solid 2px #ff7168;
+  border-radius: 5px;
+}
+.listProgram li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  font-size: 15px;
+  color: #F9E9D1;
+  font-family: "微軟正黑體";
+  font-weight: bold;
+}
+
+hr {
+  border: none;
+  border-bottom: solid 4px #ff7168;
+  width: 40%;
+  margin-left: 0;
+}
+
+.btn {
+  border: solid 3px #ff7168;
+  padding: 5px 20px;
+  margin-right: 10px;
+  right: 400px;
+  top: -50px;
+}
+
+.fill {
+  background-color: #ff7168;
+}
+
+.btn {
+  width: 250px;
+  border-radius: 50px;
+  height: 60px;
+  position: relative;
+  border: none;
+  color: #F8EFC0;
+  background: #000066;
+  font-size: 1.7rem;
+  font-weight: 700;
+  display: block;
+  cursor: pointer;
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #F593B8 0%, #9EF5D1 33%, #F5EF7E 70%, #BC7DF5 100%);
+  width: 260px;
+  background-size: 150% 150%;
+  height: 70px;
+  transform: translate(-5px, -5px);
+  border-radius: 50px;
+  z-index: -1;
+  -webkit-animation: animation 3s ease infinite;
+          animation: animation 3s ease infinite;
+}
+
+@-webkit-keyframes animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/*旋轉的圓 */
+@-webkit-keyframes animated-background {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+@keyframes animated-background {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+.loader-wrapper {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  right: 600px;
+  bottom: -150px;
+}
+
+.loader {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: 10px solid #D9006C;
+  border-top-color: #750075;
+  border-bottom-color: #FF7168;
+  border-radius: 50%;
+  -webkit-animation: rotate 5s linear infinite;
+          animation: rotate 5s linear infinite;
+}
+
+.loader-inner {
+  border-top-color: #750075;
+  border-bottom-color: #FF7168;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    transform: scale(1) rotate(100deg);
+  }
+  50% {
+    transform: scale(0.5) rotate(-360deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: scale(1) rotate(100deg);
+  }
+  50% {
+    transform: scale(0.5) rotate(-360deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+.icon1 {
+  width: 100px;
+  height: 100px;
+  background-color: #FFDAC8;
+  margin: 5px;
+  position: relative;
+  left: -600px;
+  top: 100px;
+  border-radius: 40%;
+  transform: rotate(5deg);
+}
+
+.ear {
+  width: 30%;
+  height: 70%;
+  background-color: #FFDAC8;
+  border-radius: 30%;
+  position: absolute;
+  top: -60px;
+  left: 50%;
+}
+
+.ears {
+  width: 30%;
+  height: 70%;
+  background-color: #FFDAC8;
+  border-radius: 30%;
+  position: absolute;
+  top: -60px;
+  left: 13%;
+}
+
+.nose {
+  width: 25%;
+  height: 22%;
+  background-color: #F75000;
+  border-radius: 30%;
+  position: absolute;
+  top: 40px;
+  left: 35%;
+}
+
+.eye {
+  width: 15%;
+  height: 15%;
+  background-color: #642100;
+  border-radius: 30%;
+  position: absolute;
+  top: 20px;
+  left: 60%;
+}
+
+.eyes {
+  width: 15%;
+  height: 15%;
+  background-color: #642100;
+  border-radius: 30%;
+  position: absolute;
+  top: 20px;
+  left: 20%;
+}
+
+.icon2 {
+  width: 100px;
+  height: 100px;
+  background-color: #FFDAC8;
+  margin: 5px;
+  position: relative;
+  top: 100px;
+  left: -350px;
+  border-radius: 40%;
+  transform: rotate(5deg);
+}
+
+.icon3 {
+  width: 100px;
+  height: 100px;
+  background-color: #FFDAC8;
+  margin: 5px;
+  position: relative;
+  bottom: -950px;
+  left: -850px;
+  border-radius: 40%;
+  transform: rotate(5deg);
+}
